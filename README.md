@@ -39,7 +39,7 @@ Import [preview_hdr_pq.json](example_workflows/preview_hdr_pq.json), select a so
 
 ## Compatibility and validation
 
-The original development checks used ComfyUI `72fc2631f` and frontend `1.55.17`. This is a historical tested configuration, not a guarantee for every current version. The frontend uses a DOM image widget, including Nodes 2.0. Button labels are currently Russian: **Открыть** (Open) and **Сохранить** (Save).
+The node was installed and tested during development on 16 October 2026: all seven integration tests passed, and inline HLG/PQ previews were checked in the browser on a Mac. It has also been used and checked by the project owner. The recorded configuration was ComfyUI `72fc2631f` and frontend `1.55.17`; this does not guarantee compatibility with every current version. Publication preparation rechecked Python/JavaScript syntax and the example JSON, without rerunning the integration suite. The frontend uses a DOM image widget, including Nodes 2.0. Button labels are currently Russian: **Открыть** (Open) and **Сохранить** (Save).
 
 The integration suite checks the real AVIF encoder, 10-bit format, HLG/PQ metadata, dimensions, invalid input, concurrent runs, failed encodes and bounded cleanup. Run it using the Python environment of a compatible ComfyUI checkout:
 
